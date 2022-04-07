@@ -31,8 +31,6 @@ def instructions():
     print()
     print("The rules of the game will go here")
     print()
-    print("Program continues")
-    print()
 
 
 # num check function
@@ -61,5 +59,7 @@ played_before = yes_no("Have you played this game before?: ")
 
 if played_before == "No":
     print(instructions())
-else:
-    print("Program continues")
+
+# ask the user how much they want to play with
+user_balance = num_check("How much would you like to play with? $: ", 1, 10)
+print(f"You are playing with ${user_balance}!")
