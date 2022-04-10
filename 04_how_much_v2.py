@@ -3,7 +3,7 @@ use a try/accept and pull error message out of the loop
 """
 
 def num_check(question, low, high):
-    error = "That was not a valid input\n" \
+    error = "That was not a valid input\n"
             "Please enter a number between {} and {}\n".format(low, high)
 
     # keep asking until a valid amount (1-10) is entered
