@@ -1,7 +1,8 @@
-"""LU base component - based on 00_LU_base_v1
-components added after they have been created and tested
+"""LU base component - based on 00_LU_base_v2
+adding instructions and further decorations
 """
 import random
+
 
 # yes/no checking function:
 def yes_no(question_text):
@@ -27,9 +28,23 @@ def yes_no(question_text):
 
 # Function to display instructions
 def instructions():
-    print("***** How to Play *****")
     print()
-    print("The rules of the game will go here")
+    print(formatter("*", "How to play"))
+    print()
+    print("Choose a starting amount to play with - must be between $1 and $10")
+    print()
+    print("Then press <enter> to play. You will get a random token which might"
+          "be a horse, a zebra, a donkey, or a unicorn.")
+    print()
+    print("It costs nothing to play each round, but depending on your prize, you"
+          "could win money or lose it. These are the payout amounts:\n"
+          "\tUnicorn: balance increases by $4\n"
+          "\tHorse or Zebra: balance decreases by $0.50\n"
+          "\tDonkey: balance decreases by $1\n")
+    print("\nSee if you can avoid getting donkeys, get the unicorns, and finish with"
+          "more money than you started with.\n")
+
+    print("*" * 50)
     print()
 
 
